@@ -1,4 +1,4 @@
-@charset "UTFF-8";
+@charset "utf-8";
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -34,7 +34,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999999999999999999999999;
+    z-index: 10;
 }
 
 .fixed {
@@ -73,7 +73,7 @@ body {
     font-size: 90px;
     font-weight: 700;
     color: #74cfae;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .theme-main__sub-title {
@@ -127,7 +127,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    margin-bottom: -80px;
+    margin-bottom: 90px;
 }
 
 .tile__tiles--child {
@@ -140,16 +140,20 @@ body {
 }
 
 .tile__tiles--click {
-    margin: 0 0 80px 100px;
+    margin: 0 0 0 100px;
 }
 
 .tile__tiles--click:nth-child(3n+1) {
     margin-left: 0;
 }
 
+.tile__tiles--click:nth-child(n+4) {
+    margin-top: 80px;
+}
+
 .tile__text--text {
     display: inline-block;
-    margin: 90px 90px 0 0;
+    margin: 0 90px 0 0;
     width: 650px;
 }
 
